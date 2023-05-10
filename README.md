@@ -1,6 +1,5 @@
-﻿# LabTech-Powershell-Module
-This is an attempt to create a comprehensive LT PoSH module. 
-To import this module in your scripts you can run:
+﻿# Automate-Powershell-Module
+
 ```
 (new-object Net.WebClient).DownloadString('moduleurl') | iex
 ```
