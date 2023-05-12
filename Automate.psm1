@@ -24,21 +24,7 @@
 
 .LINK
     https://github.com/Braingears/PowerShell
-    
-.NOTES
-    File Name      : Automate-Module.psm1
-    Author         : Chuck Fowler (Chuck@Braingears.com)
-    Version        : 1.0
-    Creation Date  : 11/10/2019
-    Purpose/Change : Initial script development
-    Prerequisite   : PowerShell V2
-    
-    Version        : 1.1
-    Date           : 11/15/2019
-    Changes        : Add $Automate.InstFolder and $Automate.InstRegistry and check for both to be consdered for $Automate.Installed
-                     It was found that the Automate Uninstaller EXE is leaving behind the LabTech registry keys and it was not being detected properly. 
-    
-    
+
 .EXAMPLE
     Confirm-Automate [-Silent]
 
@@ -84,22 +70,6 @@ Function Confirm-Automate {
     .LINK
         https://github.com/Braingears/PowerShell
         
-    .NOTES
-        Version        : 1.0
-        Author         : Chuck Fowler
-        Creation Date  : 08/16/2019
-        Purpose/Change : Initial script development
-    
-        Version        : 1.1    
-        Date           : 11/15/2019
-        Changes        : Add $Automate.InstFolder and $Automate.InstRegistry and check for both to be consdered for $Automate.Installed
-                         It was found that the Automate Uninstaller EXE is leaving behind the LabTech registry keys and it was not being detected properly. 
-    
-        Version        : 1.2    
-        Date           : 04/02/2020
-        Changes        : Add $Automate.Service -eq $null
-                         If the service still exists, the installation is failing with Exit Code 1638.                     
-                         
     .EXAMPLE
         Confirm-Automate [-Silent]
     
